@@ -9,7 +9,8 @@ body {
     background-image: url(/assets/images/favicon-32x32.png);
     display: flex;
     background-size: cover;
-    width: 1440px;
+    min-width: 375;
+    max-width: 1440px;
     height: 1000px;
     display: flex;
     align-items: center;
@@ -180,4 +181,73 @@ button:hover{
 .attribution {
     position: absolute;
     top: 800px;
+}
+
+@media (max-width:600px) {
+    body {
+        background-image: none;
+    }
+    main {
+        box-shadow: none;
+        
+    }
+    .result {
+        position: fixed;
+        width: 100%;
+        bottom: 55%;
+        border-radius: 0px 0px 30px 30px;
+       
+    }
+    .summary {
+        box-shadow: none;
+        position: fixed;
+        width: 100%;
+        top: 45%;
+        height: 30%;
+        right: 20px;
+    }
+
+    thead {
+        position: relative;
+        right: 35%;
+        bottom: 20px;
+    }
+
+    table {
+        width: 90%;
+        position: fixed;
+        left: 5%;
+        top: 50%;
+        border-collapse: collapse;
+    }
+    #reaction .rate {
+        position: relative;
+        left: 50%;
+    }
+
+    #memory .rate {
+        position: relative;
+        left: 51%;
+    }
+
+    #verbal .rate {
+        position: relative;
+        left: 55%;
+    }
+
+    #visual .rate {
+        position: relative;
+        left: 55%;
+    }
+
+
+    button {
+        width: 80%;
+        left: 15%;
+        top: 120%;
+    }
+
+    .attribution {
+        display: none;
+    }
 }
