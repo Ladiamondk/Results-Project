@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
 body {
-    background-color: lightgray;
+    background-image: url(/assets/images/favicon-32x32.png);
+    display: flex;
+    background-size: cover;
     width: 1440px;
     height: 1000px;
     display: flex;
@@ -31,6 +35,7 @@ header {
 strong {
     color: white;
 }
+
 p strong {
     font-size: 48px;
     display: block;
@@ -50,6 +55,14 @@ footer strong {
     display: block;
     margin: 20px;
     font-size: 20px;
+}
+
+span {
+    color: rgba(125, 123, 123, 0.55);
+}
+
+.rate strong{
+    color: black;
 }
 
 footer {
@@ -78,29 +91,91 @@ footer {
     right: 30px;
 }
 table {
-    height: 80%;
-    width: 200px;
-    margin: 20px auto;
-    line-height: ;
+    width: 80%;
+    position: relative;
+    left: 40px;
+    top: 50px;
+    border-collapse: collapse;
 }
+
+thead {
+    position: relative;
+    right: 60px;
+    bottom: 20px;
+}
+
 #reaction {
-    background-color:hsl(0, 100%, 67%);
+    background-color:hsla(0, 100%, 67%, .1);
+    color: hsl(0, 100%, 67%);
+    font-size: 16px;
+    text-align: justify;
+    position: relative;
+    padding: 10px;
+    border-radius: 30px;
+    border: 10px solid white;
+
+}
+#reaction .rate {
+    position: relative;
+    left: 35px;
+}
+
+#memory {
+    background-color: hsla(39, 100%, 56%, .1) ;
+    color:hsl(39, 100%, 56%) ;
+    padding: 10px;
+    border-radius: 30px;
+    border: 10px solid white;
+    font-size: 16px;
+
+}
+
+#memory .rate {
+    position: relative;
+    left: 38px;
+}
+
+#verbal {
+    background-color: hsla(166, 100%, 37%, 0.1);
+    color: hsl(166, 100%, 37%);
+    padding: 10px;
+    border-radius: 30px;
+    border: 10px solid white;
     font-size: 16px;
 }
-#memory {
-    background-color: hsl(39, 100%, 56%);
-}
-#verbal {
-    background-color: hsl(166, 100%, 37%);
-}
-#visual {
-    background-color: hsl(234, 85%, 45%);
+#verbal .rate {
+    position: relative;
+    left: 50px;
 }
 
+#visual {
+    background-color: hsla(234, 85%, 45%, .1);
+    color:  hsl(234, 85%, 45%);
+    padding: 10px;
+    border-radius: 30px;
+    border: 10px solid white;
+    font-size: 16px;
+}
+
+#visual .rate {
+    position: relative;
+    left: 50px;
+}
+
+button:hover{
+    cursor:pointer;
+}
 
  button {
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(221, 100%, 96%);
+    border-radius: 30px;
     position: relative;
-    left: 45%;
+    top: 60px;
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    left: 20%;
  }
 .attribution {
     position: absolute;
