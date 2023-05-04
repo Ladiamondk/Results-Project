@@ -242,9 +242,10 @@ button:hover{
 
 
     button {
+        position: relative;
         width: 80%;
         left: 15%;
-        top: 120%;
+        top: 130%;
     }
 
     .attribution {
